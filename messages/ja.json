@@ -1,0 +1,909 @@
+{
+  "common": {
+    "appName": "Emotype",
+    "tagline": "感情を記録し、検索する",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "close": "閉じる",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "back": "戻る",
+    "next": "次へ",
+    "submit": "送信",
+    "search": "検索",
+    "filter": "フィルター",
+    "all": "すべて",
+    "or": "または",
+    "language": "言語",
+    "languages": {
+      "ja": "日本語",
+      "en": "English"
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "review": "レビュー",
+    "input": "入力ログ",
+    "card": "週次カード",
+    "todo": "To-Do",
+    "templates": "テンプレート",
+    "analytics": "分析",
+    "search": "Search",
+    "calendar": "Calendar",
+    "xIntegration": "X連携",
+    "subscription": "プラン",
+    "logout": "Logout",
+    "menu": "メニュー",
+    "searchYourEmotions": "Search your emotions"
+  },
+  "landing": {
+    "hero": {
+      "badge": "AIで感情を可視化",
+      "title": "感情を検索して、",
+      "titleHighlight": "自分と再会する",
+      "description": "あなたの感情をベクトル化し、AIが意味を理解。",
+      "descriptionLine2": "「悲しかった時」「嬉しかった瞬間」を自然な言葉で検索できる、新しい感情日記。",
+      "cta": "7日間無料で試す",
+      "features": "機能を見る",
+      "feature1": "月額¥480から",
+      "feature2": "AIで感情分析"
+    },
+    "mockup": {
+      "searchTitle": "感情を検索",
+      "searchSubtitle": "過去の自分と再会しよう",
+      "searchPlaceholder": "例: 嬉しかった時、緊張した瞬間...",
+      "similarityLabel": "類似度",
+      "aiAnalysisTitle": "AI分析",
+      "aiAnalysisText": "今週は前向きな感情が",
+      "aiAnalysisIncrease": "+23%増加",
+      "emotionGraphTitle": "感情グラフ",
+      "examples": {
+        "joy": "友人と話して安心感が戻ってきた。声を聞いた瞬間に胸がふわっとした。",
+        "love": "週末の朝、ゆっくりコーヒーを淹れている時間が幸せ。音楽と香りに包まれて心が落ち着いた。",
+        "surprise": "思い切って投稿した記事に想像以上のリアクションがきて驚いた。自分の言葉が届いた気がした。"
+      },
+      "live": "ライブプレビュー",
+      "liveDescription": "実際の画面の雰囲気をすぐに確認できます。",
+      "betaReminder": "ベータ版の画面は随時更新されます。"
+    },
+    "features": {
+      "title": "Emotypeができること",
+      "subtitle": "AIを活用した感情分析で、あなたの心の変化を可視化します。",
+      "subtitleLine2": "無料プランで月30件まで投稿可能。Proプランで全機能を解放。",
+      "vectorSearch": {
+        "title": "ベクトル検索",
+        "badge": "PRO",
+        "description": "AIが感情の意味を理解。「悲しい」「嬉しい」など自然な言葉で、似た気持ちの過去の投稿を見つけられます。無料プランでは一覧からの簡易検索が可能です。"
+      },
+      "emotionGraph": {
+        "title": "感情グラフ",
+        "badge": "PRO",
+        "description": "日々の感情をグラフで可視化。喜び・悲しみ・怒り・恐れなど、あなたの心の変化をカレンダーで一目で確認できます。"
+      },
+      "xIntegration": {
+        "title": "X連携",
+        "badge": "PRO",
+        "description": "Xのポストを自動で感情分析して保存。SNSでの投稿も含めて、あなたの感情の軌跡を記録します。"
+      }
+    },
+    "cta": {
+      "title": "今すぐはじめよう",
+      "description": "7日間無料トライアルで全機能を体験。",
+      "descriptionLine2": "あなたの心の変化を、AIとともに記録しましょう。",
+      "button": "7日間無料で試す"
+    },
+    "footer": {
+      "copyright": "© {year} Emotype. All rights reserved.",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "termsEn": "Terms (EN)",
+      "privacyEn": "Privacy (EN)"
+    }
+  },
+  "login": {
+    "title": "ログイン",
+    "email": "メールアドレス",
+    "emailPlaceholder": "your-email@example.com",
+    "password": "パスワード",
+    "passwordPlaceholder": "••••••••",
+    "loginButton": "ログイン",
+    "loggingIn": "ログイン中...",
+    "googleLogin": "Googleでログイン",
+    "noAccount": "アカウントをお持ちでない方は",
+    "signUp": "サインアップ",
+    "backToHome": "トップページに戻る",
+    "errors": {
+      "title": "エラー",
+      "invalidCredentials": "メールアドレスまたはパスワードが正しくありません",
+      "emailNotConfirmed": "メールアドレスが確認されていません",
+      "loginFailed": "ログインに失敗しました",
+      "googleLoginFailed": "Googleログインに失敗しました"
+    }
+  },
+  "dashboard": {
+    "welcome": "ようこそ",
+    "stats": {
+      "title": "統計",
+      "total": "総投稿数",
+      "thisWeek": "今週",
+      "thisMonth": "今月"
+    },
+    "postForm": {
+      "title": "今の気持ちを共有",
+      "subtitle": "感情を記録して、過去の自分と繋がろう",
+      "placeholder": "今、どんな気持ちですか？",
+      "characterCount": "{count}/500",
+      "imageButton": "画像",
+      "audioButton": "音声",
+      "submitButton": "投稿する",
+      "posting": "投稿中...",
+      "imageAttached": "📷 {fileName}",
+      "audioAttached": "音声メモが添付されました",
+      "successMessage": "投稿が完了しました！ ✨",
+      "errorMessage": "エラー: {message}",
+      "emptyContent": "内容を入力してください"
+    },
+    "recentPosts": {
+      "title": "最近の投稿",
+      "subtitle": "あなたの感情の記録",
+      "viewAll": "すべて見る",
+      "noPostsTitle": "まだ投稿がありません",
+      "noPostsDescription": "上記のフォームから感情を共有してみましょう"
+    },
+    "aiInsight": {
+      "title": "AIインサイト",
+      "subtitle": "感情傾向の分析",
+      "byClaudeAI": "by Claude AI",
+      "noInsight": "インサイトを読み込めませんでした"
+    },
+    "emotionGraph": {
+      "title": "感情グラフ",
+      "subtitle": "感情の変化を可視化",
+      "days": "{count}日間の感情の変化",
+      "noData": "データがありません",
+      "noDataDescription": "投稿を追加するとグラフが表示されます",
+      "emotionScore": "感情スコア",
+      "neutralLine": "中立ライン (50%)",
+      "periods": {
+        "7days": "7日",
+        "14days": "14日",
+        "30days": "30日"
+      },
+      "tooltip": {
+        "emotionScore": "感情スコア:",
+        "postCount": "投稿数: {count}件",
+        "veryPositive": "とてもポジティブ",
+        "positive": "ポジティブ",
+        "somewhatNegative": "ややネガティブ",
+        "negative": "ネガティブ"
+      }
+    },
+    "quickActions": {
+      "title": "クイックアクション",
+      "searchEmotions": "感情を検索",
+      "searchEmotionsDescription": "似た感情の投稿を見つける",
+      "xIntegration": "X連携",
+      "xIntegrationDescription": "Twitterから投稿をインポート"
+    },
+    "quickLog": {
+      "title": "かんたん感情ログ",
+      "subtitle": "ボタンを押すだけですぐに記録できます",
+      "defaultContent": "今、{label}です",
+      "success": "{emoji} {label}を記録しました",
+      "error": "感情を記録できませんでした: {message}"
+    },
+    "planBanner": {
+      "free": {
+        "title": "無料プラン (FREE)",
+        "posts": "今月の投稿: {count} / 30件",
+        "remaining": "（残り{count}件）",
+        "upgradeButton": "Proへ"
+      },
+      "pro": {
+        "title": "Proプラン",
+        "badge": "UNLIMITED",
+        "description": "すべてのPro機能が利用可能です",
+        "postsLabel": "今月の投稿"
+      },
+      "admin": {
+        "title": "管理者アカウント",
+        "badge": "ADMIN",
+        "description": "すべての機能とユーザー管理が利用可能です",
+        "postsLabel": "今月の投稿"
+      }
+    },
+    "upgradePrompt": {
+      "title": "Proプランにアップグレード",
+      "subtitle": "すべての機能を開放して、感情記録を最大限に活用しましょう",
+      "startButton": "Proプランを始める",
+      "paymentNotice": "※ 決済機能は準備中です。もうしばらくお待ちください。",
+      "planComparison": {
+        "free": {
+          "title": "Free",
+          "price": "¥0",
+          "period": "永久無料",
+          "features": {
+            "basicPosts": "感情投稿・検索",
+            "monthlyLimit": "月30件まで投稿可能",
+            "noGraph": "感情トレンドグラフ",
+            "noInsights": "AIインサイト（日次・週次）",
+            "noXIntegration": "X連携（近日実装）",
+            "noMedia": "画像・音声添付",
+            "noEmotionCode": "感情コード機能"
+          }
+        },
+        "pro": {
+          "title": "Pro",
+          "price": "¥480",
+          "period": "月額（16% OFF）",
+          "popular": "人気",
+          "features": {
+            "unlimitedPosts": "無制限投稿",
+            "emotionGraph": "感情トレンドグラフ",
+            "aiInsights": "AIインサイト（日次・週次）",
+            "xIntegration": "X連携（近日実装）",
+            "media": "画像・音声添付",
+            "emotionCode": "感情コード機能",
+            "prioritySupport": "優先サポート"
+          }
+        }
+      }
+    },
+    "audioRecorder": {
+      "title": "音声メモ",
+      "micDenied": "マイクへのアクセスが拒否されました。ブラウザの設定を確認してください。",
+      "indicator": "録音中...",
+      "startButton": "録音を開始",
+      "stopButton": "停止",
+      "recordingTime": "録音時間",
+      "recordingComplete": "録音完了",
+      "retryButton": "再度録音する",
+      "confirmButton": "この録音を使う"
+    },
+    "proFeatureGuard": {
+      "loading": "読み込み中...",
+      "title": "Pro機能",
+      "description": "この機能はProプランでご利用いただけます。アップグレードしてすべてのツールを解放しましょう。",
+      "cta": "Proプランを見る",
+      "back": "ダッシュボードに戻る"
+    },
+    "twitterIntegration": {
+      "title": "X（Twitter）連携",
+      "description": "Xアカウントを連携してフォロワーやポストを自動で同期します。",
+      "statusBadge": {
+        "connected": "接続済み",
+        "disconnected": "未接続"
+      },
+      "benefitsTitle": "連携するとできること",
+      "benefits": {
+        "followers": "フォロワー推移を自動で記録",
+        "performance": "ポストの反応を可視化",
+        "engagement": "エンゲージメント率を把握"
+      },
+      "actions": {
+        "connect": "Xアカウントを連携",
+        "connecting": "連携中...",
+        "manualSync": "手動で同期",
+        "syncing": "同期中...",
+        "disconnect": "連携を解除",
+        "connectAnother": "別のアカウントを連携"
+      },
+      "notes": {
+        "title": "注意事項",
+        "autoSync": "データは1時間ごとに自動同期されます。",
+        "rateLimit": "X APIの制限により一部データが欠落する場合があります。",
+        "disconnect": "連携を解除すると保存済みの同期データも削除されます。"
+      },
+      "connectedCard": {
+        "title": "連携中のアカウント",
+        "username": "ユーザー名",
+        "followers": "フォロワー",
+        "posts": "ポスト数",
+        "lastSync": "最終同期"
+      },
+      "unconnected": {
+        "title": "X（Twitter）連携",
+        "subtitle": "Xアカウントを接続してフォロワーやポストを自動同期しましょう。"
+      },
+      "errors": {
+        "status": "連携状況の取得に失敗しました（status {status}）。",
+        "authUrl": "認証URLの取得に失敗しました。",
+        "disconnect": "連携の解除に失敗しました。もう一度お試しください。",
+        "sync": "データ同期に失敗しました。",
+        "rateLimit": "X APIの制限に達しました。しばらく待ってから再度お試しください。",
+        "rateLimitMinutes": "X APIの制限に達しました。約{minutes}分後に再度お試しください。",
+        "rateLimitTime": "X APIの制限に達しました。{time}頃に再試行してください。",
+        "nextRetryTime": "次に同期できる時間: {time}",
+        "nextRetryMinutes": "次に同期できるまであと約{minutes}分です。",
+        "generic": "一時的なエラーが発生しました。しばらくしてからお試しください。"
+      },
+      "dialogs": {
+        "disconnectConfirm": "X連携を解除しますか？"
+      }
+    },
+    "twitterPosts": {
+      "title": "X（Twitter）のポスト（{count}件）",
+      "emptyTitle": "まだポストがありません",
+      "emptyDescription": "「データを同期」を押してXからポストを取り込みましょう。",
+      "errors": {
+        "loginRequired": "ログインが必要です。",
+        "loadFailed": "ツイートの読み込みに失敗しました。"
+      },
+      "media": {
+        "photo": "メディア{index}",
+        "video": "動画サムネイル{index}",
+        "quotedPhoto": "引用ポストのメディア{index}",
+        "quotedVideo": "引用ポストの動画サムネイル{index}"
+      },
+      "openOnX": "X（Twitter）で開く →"
+    }
+  },
+  "dashboardInput": {
+    "badge": "手動ログ",
+    "title": "ムード & デジタル行動ログ",
+    "subtitle": "SNS連携なしで気分・スクリーンタイム・メモを記録し、週次AIレビューに渡します。",
+    "weekProgress": "今週 {count}/7 日を記録",
+    "dailySnapshot": {
+      "label": "デイリースナップショット",
+      "prev": "前日へ",
+      "next": "翌日へ"
+    },
+    "fields": {
+      "date": "日付",
+      "moodScore": "気分スコア",
+      "snsMinutes": "SNS利用時間（分）",
+      "postCount": "投稿数",
+      "memo": "振り返りメモ",
+      "tags": "メモタグ",
+      "sleepScore": "睡眠 (0-10)",
+      "mealsScore": "食事 (0-10)",
+      "focusScore": "集中度 (0-10)"
+    },
+    "placeholders": {
+      "memo": "例: 残業で疲れた / 夜更かしで集中力ダウン...",
+      "tagInput": "#タグを入力してEnter"
+    },
+    "toggles": {
+      "optional": "オプション項目を追加"
+    },
+    "actions": {
+      "save": "記録を保存",
+      "saving": "保存中...",
+      "import": "ログを取り込む",
+      "importing": "取り込み中..."
+    },
+    "templates": {
+      "label": "テンプレート",
+      "title": "オフライン入力",
+      "description": "PDFやNotionのシートで1週間分をまとめて記録できます。",
+      "pdf": "PDFをダウンロード",
+      "notion": "Notionテンプレートを複製"
+    },
+    "import": {
+      "label": "CSVインポート",
+      "title": "まとめて登録",
+      "description": "スクリーンタイム表やメモのCSVをアップロードすると日付を推定して保存します。",
+      "rowsDetected": "{count}行を検出"
+    },
+    "tables": {
+      "status": "ステータス",
+      "invalid": "要修正",
+      "ready": "取り込み可"
+    },
+    "history": {
+      "label": "履歴",
+      "title": "今週のログ",
+      "hint": "AI週次レポートを生成するときにこの記録を再利用します。",
+      "empty": "今週の記録はまだありません。"
+    },
+    "messages": {
+      "loadError": "記録の読み込みに失敗しました。",
+      "moodRequired": "気分スコアを1〜10で入力してください。",
+      "saveError": "記録を保存できませんでした。",
+      "saveSuccess": "この日のログを保存しました。",
+      "csvParseError": "CSVを読み込めませんでした。",
+      "noValidRows": "取り込める行がありません。",
+      "importError": "ログの取り込みに失敗しました。",
+      "importSuccess": "{count}件のログを取り込みました。"
+    }
+  },
+  "weeklyReview": {
+    "badge": "週次リフレクション",
+    "title": "AI週次レビュー",
+    "subtitle": "手入力の記録から1週間のストーリーと行動プランを抽出します。",
+    "summaryCard": {
+      "title": "今週のまとめ",
+      "avgMood": "平均気分スコア",
+      "screenTime": "合計SNS時間",
+      "loggedDays": "記録した日数",
+      "range": "対象期間",
+      "planFree": "Freeプラン",
+      "planPro": "Proプラン",
+      "logsHint": "4日以上記録するとさらに詳細な洞察が得られます。"
+    },
+    "highlights": {
+      "title": "ハイライト",
+      "placeholder": "継続ログで前向きなパターンが見えてきます。"
+    },
+    "warnings": {
+      "title": "注意サイン",
+      "placeholder": "今週は大きなリスクは検出されていません。"
+    },
+    "actions": {
+      "title": "次のアクション",
+      "placeholder": "もう少し記録すると具体的な習慣提案が表示されます。"
+    },
+    "heatmap": {
+      "title": "ドゥームスクロールヒートマップ",
+      "description": "メモやタグから時間帯ごとのリスクを推定しています。",
+      "empty": "夜・朝など時間帯メモを追加するとヒートマップが生成されます。"
+    },
+    "correlation": {
+      "title": "気分とSNS時間の相関",
+      "description": "1日の気分スコアとSNS利用を可視化します。",
+      "empty": "2日以上の記録でグラフが表示されます。"
+    },
+    "notes": {
+      "title": "印象的だった瞬間",
+      "empty": "メモを追加すると週次レビューに背景を添えられます。"
+    },
+    "buttons": {
+      "download": "週次カードを保存",
+      "downloading": "カードを準備中…",
+      "copy": "サマリーをコピー",
+      "copied": "コピーしました",
+      "downloaded": "カードを保存しました。",
+      "downloadError": "カードの生成に失敗しました。"
+    },
+    "messages": {
+      "error": "週次レビューの読み込みに失敗しました。",
+      "empty": "まずは1日分のログを記録してください。"
+    }
+  },
+  "weeklyCard": {
+    "badge": "シェア用カード",
+    "title": "週次カード",
+    "subtitle": "AIレビューを画像化してSlackやThreadsへ共有できます。",
+    "preview": {
+      "title": "プレビュー",
+      "empty": "週次レビューを生成するとカードプレビューが表示されます。"
+    },
+    "meta": {
+      "score": "週次スコア",
+      "mood": "平均気分",
+      "sns": "SNS合計時間",
+      "doom": "ドゥーム指数"
+    },
+    "actions": {
+      "download": "カードを保存",
+      "downloading": "画像を生成中…",
+      "copied": "レビュー文をコピーしました",
+      "copy": "サマリー文をコピー",
+      "shareHint": "X / Slack / Threads などお好きな場所で共有してください。"
+    },
+    "tips": {
+      "title": "共有のヒント",
+      "list": {
+        "item1": "今週変えられた習慣を一言添えるとストーリー性が出ます。",
+        "item2": "ハッシュタグ #emotype を付けて仲間を探しましょう。",
+        "item3": "月曜のスタンドアップで進捗共有カードとして使えます。"
+      }
+    },
+    "messages": {
+      "error": "週次カードを読み込めませんでした。",
+      "downloaded": "画像を保存しました。",
+      "copyError": "クリップボードにアクセスできませんでした。"
+    }
+  },
+  "todo": {
+    "badge": "アクションラボ",
+    "title": "自己管理To-Do",
+    "subtitle": "AIの提案と自分のアイデアを習慣リストに落とし込みます。",
+    "sections": {
+      "ai": "AIからの提案",
+      "custom": "自分のTo-Do",
+      "progress": "達成状況",
+      "emptyAi": "週次レビューを生成すると提案が追加されます。",
+      "emptyCustom": "To-Doを追加して行動を可視化しましょう。"
+    },
+    "form": {
+      "placeholder": "例: 22時以降は通知を切る",
+      "addButton": "To-Doを追加",
+      "typeLabel": "タイプ",
+      "types": {
+        "do": "実行する",
+        "avoid": "控える",
+        "custom": "カスタム"
+      }
+    },
+    "list": {
+      "markDone": "完了",
+      "undo": "戻す",
+      "sourceAi": "AI提案",
+      "sourceUser": "自分で追加"
+    },
+    "badges": {
+      "streak3": "3日連続達成！"
+    },
+    "messages": {
+      "loading": "To-Doを読み込み中…",
+      "error": "To-Doを読み込めませんでした。",
+      "addError": "To-Doを追加できませんでした。",
+      "updateError": "更新に失敗しました。",
+      "aiAdded": "リストに追加しました。"
+    }
+  },
+  "templatesPage": {
+    "badge": "オフラインツール",
+    "title": "テンプレート & インポート",
+    "subtitle": "スプレッドシート派やNotion派でも1週間のログをまとめて管理できます。",
+    "downloads": {
+      "title": "テンプレートをダウンロード",
+      "pdf": "PDFログシートを保存",
+      "notion": "Notionデータベースを複製",
+      "csv": "CSVフォーマット"
+    },
+    "upload": {
+      "title": "CSVインポート",
+      "description": "列は date,mood,sns_time,posts,sleep,meals,focus,memo を利用してください。",
+      "button": "記録を取り込む",
+      "importing": "取り込み中…",
+      "previewTitle": "検出行",
+      "valid": "取り込み可",
+      "invalid": "要修正"
+    },
+    "sample": {
+      "title": "1週間の記録例",
+      "description": "入力の参考にご利用ください。"
+    },
+    "help": {
+      "title": "フォーマットのヒント",
+      "items": {
+        "item1": "日付は YYYY-MM-DD 形式です。",
+        "item2": "気分は1〜10、SNS分は0でもOK。",
+        "item3": "メモは500文字まで。"
+      }
+    },
+    "messages": {
+      "error": "記録の取り込みに失敗しました。",
+      "success": "{count}件の記録を取り込みました。",
+      "parseError": "CSVを読み込めませんでした。"
+    }
+  },
+  "adminAnalytics": {
+    "badge": "運用ダッシュボード",
+    "title": "Analytics",
+    "subtitle": "アクティベーションや週次レビュー活用、習慣化の状況を可視化します。",
+    "cards": {
+      "dau": "DAU",
+      "wau": "WAU",
+      "mau": "MAU",
+      "review": "レビュー生成率",
+      "todo": "To-Do完了率",
+      "conversion": "Free → Pro"
+    },
+    "charts": {
+      "active": "直近7日のDAU推移",
+      "events": "イベント構成比"
+    },
+    "table": {
+      "title": "イベント内訳",
+      "event": "イベント",
+      "count": "件数"
+    },
+    "messages": {
+      "loading": "分析データを読み込み中…",
+      "unauthorized": "管理者のみアクセス可能です。",
+      "error": "分析データの取得に失敗しました。"
+    }
+  },
+  "posts": {
+    "title": "投稿一覧",
+    "subtitle": "すべての投稿を表示",
+    "searchPlaceholder": "投稿を検索...",
+    "filterByEmotion": "感情で絞り込む",
+    "resultCount": "{count}件の投稿",
+    "filterApplied": " (フィルター適用中)",
+    "noPostsFound": "投稿が見つかりませんでした",
+    "changeFilter": "フィルターを変更してみてください",
+    "noPostsYet": "まだ投稿がありません",
+    "audioMemo": "音声メモ",
+    "postImage": "投稿画像"
+  },
+  "search": {
+    "title": "感情を検索",
+    "subtitle": "自然な言葉で過去の感情を探してみましょう",
+    "placeholder": "例: 悲しい、嬉しい、イライラした時、緊張...",
+    "searchButton": "検索",
+    "searching": "検索中...",
+    "resultCount": "{count} 件の結果が見つかりました",
+    "noResults": "検索結果が見つかりませんでした",
+    "tryDifferentKeyword": "別のキーワードで試してみてください",
+    "startSearching": "感情を検索してみましょう",
+    "searchDescription": "「悲しい」「嬉しい」「イライラした時」「緊張した時」など、自然な言葉で検索できます。",
+    "searchDescriptionLine2": "AIが感情の意味を理解して、似た気持ちの投稿を見つけます。",
+    "similarity": "類似度 {percent}%",
+    "lowRelevance": "（関連性が低い可能性）",
+    "errors": {
+      "title": "エラーが発生しました",
+      "message": "{message}"
+    }
+  },
+  "subscription": {
+    "title": "プラン管理",
+    "subtitle": "あなたの現在のプランと利用状況を確認できます",
+    "currentPlan": "現在のプラン",
+    "currentPlanBadge": "現在のプラン",
+    "monthly": "月額",
+    "yearly": "年額",
+    "monthlyPosts": "今月の投稿数",
+    "remainingPosts": "残り投稿可能数",
+    "availableFeatures": "利用可能な機能",
+    "allFeatures": "すべて",
+    "allProFeatures": "すべてのPro機能が利用可能です",
+    "allAdminFeatures": "すべての機能とユーザー管理機能が利用可能です",
+    "downgradeButton": "無料プランに変更",
+    "upgradeDescription": "Proプランで無制限投稿とすべての機能を開放。初回は7日間の無料トライアル付きです。",
+    "startTrialButton": "7日間無料トライアルを開始",
+    "planComparison": {
+      "title": "プラン比較",
+      "free": {
+        "title": "Free",
+        "price": "¥0",
+        "period": "永久無料",
+        "features": {
+          "basicPosts": "基本的な感情投稿",
+          "monthlyLimit": "月30件まで投稿可能",
+          "basicSearch": "基本的な感情検索",
+          "noGraph": "感情トレンドグラフ",
+          "noInsights": "AIインサイト",
+          "noMedia": "画像・音声添付",
+          "noXIntegration": "X連携",
+          "noCalendar": "カレンダー機能"
+        }
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "¥480",
+        "period": "月額（税込）",
+        "recommended": "おすすめ",
+        "trialNotice": "初回7日間の無料トライアル付き。いつでもキャンセルできます。",
+        "features": {
+          "unlimitedPosts": "無制限投稿",
+          "emotionGraph": "感情トレンドグラフ",
+          "aiInsights": "AIインサイト（日次・週次）",
+          "media": "画像・音声添付",
+          "xIntegration": "X連携",
+          "calendar": "カレンダー機能",
+          "emotionCode": "感情コード機能",
+          "prioritySupport": "優先サポート"
+        }
+      }
+    },
+    "upgradeModal": {
+      "title": "7日間無料トライアルを開始",
+      "subtitle": "すべての機能を開放して、感情記録を最大限に活用しましょう",
+      "billing": {
+        "monthly": {
+          "price": "¥{price}",
+          "period": "月額"
+        },
+        "yearly": {
+          "price": "¥{price}",
+          "period": "年額（月¥400相当）",
+          "savings": "¥960 お得"
+        }
+      },
+      "priceDisplay": "¥{price} / {period}",
+      "perMonth": "月",
+      "perYear": "年",
+      "taxIncluded": "税込・{period}課金",
+      "monthlySavings": "月額より¥{amount}お得！",
+      "features": {
+        "unlimitedPosts": "無制限投稿",
+        "emotionGraph": "感情トレンドグラフ",
+        "aiInsights": "AIインサイト",
+        "allProFeatures": "すべてのPro機能"
+      },
+      "startButton": "7日間無料トライアルを始める",
+      "processing": "処理中...",
+      "paymentRedirect": "Stripe決済ページへ移動します..."
+    },
+    "downgradeModal": {
+      "title": "無料プランに変更",
+      "subtitle": "本当に無料プランに変更しますか？",
+      "limitations": "変更後の制限事項：",
+      "limitationsList": {
+        "monthlyLimit": "月30件までの投稿制限",
+        "noGraph": "感情トレンドグラフが利用不可",
+        "noInsights": "AIインサイトが利用不可",
+        "noMedia": "画像・音声添付が利用不可",
+        "noXIntegration": "X連携が利用不可",
+        "noCalendar": "カレンダー機能が利用不可"
+      },
+      "dataNotice": "ご安心ください：",
+      "dataNoticeText": "過去のデータはすべて保持されます。いつでもProプランに再アップグレードできます。",
+      "cancelButton": "キャンセル",
+      "confirmButton": "無料プランに変更する",
+      "processing": "処理中..."
+    },
+    "faq": {
+      "title": "よくある質問",
+      "payment": {
+        "question": "支払い方法は何がありますか？",
+        "answer": "Stripeを通じてクレジットカード決済に対応しています。安全で確実な決済が可能です。"
+      },
+      "changePlan": {
+        "question": "いつでもプランを変更できますか？",
+        "answer": "はい、いつでもアップグレード・ダウングレードが可能です。アップグレードは即座に反映されます。ダウングレードの場合、現在の契約期間終了までProプランが継続され、その後無料プランに切り替わります。"
+      },
+      "dataRetention": {
+        "question": "無料プランから有料プランに変更すると過去のデータはどうなりますか？",
+        "answer": "過去のデータはすべて保持され、Proプランの機能で活用できるようになります。"
+      },
+      "refund": {
+        "question": "返金はできますか？",
+        "answer": "月額課金は返金対象外ですが、プランをいつでもキャンセルできます。キャンセル後は次回更新時から課金が停止されます。"
+      }
+    },
+    "messages": {
+      "checkingPayment": "決済完了を確認しています...",
+      "paymentComplete": "決済が完了しました。",
+      "paymentCanceled": "決済がキャンセルされました。",
+      "upgradeSuccess": "Proプランへのアップグレードが完了しました。",
+      "downgradeSuccess": "無料プランへの変更が完了しました。",
+      "upgradeFailed": "Stripe決済の開始に失敗しました",
+      "downgradeFailed": "ダウングレードに失敗しました",
+      "createSessionFailed": "Stripe決済セッションの作成に失敗しました"
+    }
+  },
+  "emotions": {
+    "labels": {
+      "joy": "喜び",
+      "happiness": "喜び",
+      "sadness": "悲しみ",
+      "anger": "怒り",
+      "fear": "恐れ",
+      "love": "愛",
+      "surprise": "驚き",
+      "disappointment": "失望",
+      "excitement": "興奮",
+      "neutral": "中立"
+    }
+  },
+  "time": {
+    "justNow": "たった今",
+    "minutesAgo": "{count}分前",
+    "hoursAgo": "{count}時間前",
+    "daysAgo": "{count}日前",
+    "dateFormat": "{month}月{day}日 {hours}:{minutes}",
+    "dayOfWeek": {
+      "sunday": "日",
+      "monday": "月",
+      "tuesday": "火",
+      "wednesday": "水",
+      "thursday": "木",
+      "friday": "金",
+      "saturday": "土"
+    }
+  },
+  "errors": {
+    "generic": "エラーが発生しました",
+    "networkError": "ネットワークエラーが発生しました",
+    "sessionNotFound": "セッションが作成されませんでした",
+    "unauthorized": "認証が必要です",
+    "forbidden": "アクセス権限がありません",
+    "notFound": "ページが見つかりません",
+    "serverError": "サーバーエラーが発生しました"
+  },
+  "signup": {
+    "title": "サインアップ",
+    "subtitle": "数分で感情ログを始めましょう",
+    "email": "メールアドレス",
+    "emailPlaceholder": "your-email@example.com",
+    "password": "パスワード",
+    "passwordPlaceholder": "••••••••",
+    "confirmPassword": "パスワード（確認）",
+    "confirmPasswordPlaceholder": "もう一度入力してください",
+    "signupButton": "サインアップ",
+    "signingUp": "作成中...",
+    "googleSignup": "Googleでサインアップ",
+    "haveAccount": "すでにアカウントをお持ちですか？",
+    "login": "ログイン",
+    "confirmationEmailTitle": "受信トレイを確認してください",
+    "confirmationEmailDescription": "確認メールを送信しました。リンクを開いてEmotypeを使い始めてください。",
+    "errors": {
+      "title": "エラー",
+      "passwordMismatch": "パスワードが一致しません",
+      "passwordTooShort": "パスワードは6文字以上で入力してください",
+      "alreadyRegistered": "このメールアドレスは既に登録されています",
+      "signupFailed": "サインアップに失敗しました",
+      "googleSignupFailed": "Googleサインアップに失敗しました"
+    }
+  },
+  "beta": {
+    "badge": "プライベートベータ実施中",
+    "header": {
+      "back": "ホームに戻る"
+    },
+    "hero": {
+      "title": "落ち着いたSNSルーティンを一緒に作りましょう",
+      "highlight": "Emotypeベータ版",
+      "subtitle": "正式リリース前に感情ダッシュボード、AIインサイト、X連携を体験できます。",
+      "highlights": [
+        "ダッシュボードと感情グラフが無制限",
+        "投稿にもとづく週次AIダイジェスト",
+        "招待制Discordでのフィードバック"
+      ]
+    },
+    "benefits": {
+      "title": "今参加する理由",
+      "subtitle": "ベータ参加者はEmotypeの仕上げに協力し、限定特典を受け取れます。",
+      "earlyAccess": {
+        "title": "Pro機能がすべて解放",
+        "description": "ベータ期間中はダッシュボード、AIインサイト、今後のX自動化まですべて利用できます。"
+      },
+      "community": {
+        "title": "チームへ直接フィードバック",
+        "description": "招待制Discordで意見共有やロードマップ投票が行えます。"
+      },
+      "feedback": {
+        "title": "開発ロードマップに影響",
+        "description": "あなたの週次レポートが感情検出やプロンプト、可視化改善につながります。"
+      },
+      "perks": {
+        "title": "ローンチ時の特典",
+        "description": "正式リリース時に割引Pro料金や友だち用アーリーアクセス招待をお届けします。"
+      }
+    },
+    "form": {
+      "title": "ベータ参加を申請",
+      "subtitle": "Emotypeをどう使いたいか教えてください。毎週申請を確認しています。",
+      "email": "メールアドレス",
+      "emailPlaceholder": "you@example.com",
+      "twitter": "X（Twitter）ハンドル",
+      "twitterPlaceholder": "emotype_app",
+      "twitterHint": "任意ですが、フォローアップがしやすくなります。",
+      "motivation": "どのようにEmotypeを活用したいですか？",
+      "motivationPlaceholder": "例: Xでの気分の波を可視化したい、健全な投稿習慣を身につけたい など",
+      "submit": "ベータに申し込む",
+      "submitting": "送信中...",
+      "disclaimer": "入力いただいたメールはベータに関する連絡にのみ使用します。",
+      "submitError": "送信に失敗しました。もう一度お試しください。"
+    },
+    "success": {
+      "title": "申請を受け付けました",
+      "description": "ありがとうございます！数日以内に審査し、メールでご連絡します。",
+      "button": "ホームに戻る"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "items": {
+        "timeline": {
+          "question": "ベータはいつから始まりますか？",
+          "answer": "2025年はローリングで募集しています。毎週、受け入れ枠に応じて新しい参加者をご招待します。"
+        },
+        "selection": {
+          "question": "選考の基準はありますか？",
+          "answer": "感情ログを積極的に取っている方やXで投稿が多い方、構造化されたフィードバックをくださる方を優先しています。"
+        },
+        "cost": {
+          "question": "ベータ参加に費用はかかりますか？",
+          "answer": "いいえ。ベータ期間中はすべてのPro機能を無料で提供します。有料プラン開始前には必ずご連絡します。"
+        },
+        "platform": {
+          "question": "参加に必要な環境は？",
+          "answer": "ベータはWebブラウザで動作します。PCまたはスマートフォンのブラウザとメールアドレスがあれば利用できます。"
+        }
+      }
+    },
+    "footer": {
+      "copyright": "© {year} Emotype. All rights reserved.",
+      "contact": "連絡先: beta@emotype.app"
+    }
+  }
+}

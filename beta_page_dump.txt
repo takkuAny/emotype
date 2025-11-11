@@ -1,0 +1,302 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from '@/i18n/routing'
+import { supabase } from '@/lib/supabase'
+
+export default function BetaPage() {
+  const router = useRouter()
+  const [email, setEmail] = useState('')
+  const [twitterHandle, setTwitterHandle] = useState('')
+  const [motivation, setMotivation] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+    setError('')
+
+    try {
+      // beta_testersテーブルに保存（テーブルは後で作成）
+      const { error: insertError } = await supabase
+        .from('beta_testers')
+        .insert({
+          email,
+          twitter_handle: twitterHandle,
+          motivation,
+        })
+
+      if (insertError) throw insertError
+
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Beta signup error:', err)
+      setError('登録に失敗しました。もう一度お試しください。')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  if (submitted) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 flex items-center justify-center p-4">
+        <div className="max-w-2xl w-full bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8 sm:p-12 text-center">
+          <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            登録完了！
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            βテスター登録ありがとうございます。<br />
+            近日中にメールでご連絡いたします。
+          </p>
+          <button
+            onClick={() => router.push('/')}
+            className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-xl hover:from-emerald-600 hover:to-teal-700 transition-all shadow-lg hover:shadow-xl"
+          >
+            トップページへ
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+      {/* ヘッダー */}
+      <header className="border-b border-white/50 bg-white/80 backdrop-blur-xl sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                Emotype
+              </span>
+              <span className="px-2 py-1 bg-orange-500 text-white text-xs font-bold rounded">BETA</span>
+            </div>
+            <button
+              onClick={() => router.push('/')}
+              className="text-gray-600 hover:text-gray-900 font-medium"
+            >
+              ← トップへ
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* メインコンテンツ */}
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* ヒーローセクション */}
+        <div className="text-center mb-12">
+          <div className="inline-block px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full mb-6">
+            🚀 βテスター募集中
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            SNS×感情衛生コーチ<br />
+            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              Emotype
+            </span>
+            のβ版を<br />
+            一緒に作りませんか？
+          </h1>
+          <p className="text-xl text-gray-600 mb-4">
+            X（Twitter）があなたの気分にどう影響しているか、<br className="hidden sm:block" />
+            AIで分析・可視化するサービスです。
+          </p>
+        </div>
+
+        {/* 特典セクション */}
+        <div className="bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            βテスター限定特典
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl">🎁</span>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">永久Pro無料</h3>
+                <p className="text-sm text-gray-600">
+                  βテスターは正式リリース後もPro機能を無料で利用可能
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl">💬</span>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">専用Discordコミュニティ</h3>
+                <p className="text-sm text-gray-600">
+                  開発者と直接コミュニケーション＋機能提案
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">優先サポート</h3>
+                <p className="text-sm text-gray-600">
+                  バグ報告・要望に迅速対応
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl">📊</span>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">新機能先行体験</h3>
+                <p className="text-sm text-gray-600">
+                  最新機能を一般公開前に利用可能
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 応募フォーム */}
+        <div className="bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            βテスター応募フォーム
+          </h2>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                メールアドレス <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="twitter" className="block text-sm font-medium text-gray-700 mb-2">
+                X（Twitter）アカウント
+              </label>
+              <div className="flex items-center gap-2">
+                <span className="text-gray-500">@</span>
+                <input
+                  type="text"
+                  id="twitter"
+                  value={twitterHandle}
+                  onChange={(e) => setTwitterHandle(e.target.value)}
+                  className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
+                  placeholder="your_handle"
+                />
+              </div>
+              <p className="text-xs text-gray-500 mt-1">
+                X連携機能のテストにご協力いただける方はご記入ください（任意）
+              </p>
+            </div>
+
+            <div>
+              <label htmlFor="motivation" className="block text-sm font-medium text-gray-700 mb-2">
+                応募動機・期待すること <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                id="motivation"
+                required
+                value={motivation}
+                onChange={(e) => setMotivation(e.target.value)}
+                rows={4}
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all resize-none"
+                placeholder="例：SNSの使い過ぎで疲れることが多く、自分の感情パターンを可視化したいと思っています。"
+              />
+            </div>
+
+            {error && (
+              <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-600 text-sm">
+                {error}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-xl hover:from-emerald-600 hover:to-teal-700 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {loading ? '送信中...' : 'βテスターに応募する'}
+            </button>
+          </form>
+
+          <p className="text-xs text-gray-500 text-center mt-6">
+            ご登録いただいたメールアドレスは、βテスト関連の連絡にのみ使用します。
+          </p>
+        </div>
+
+        {/* FAQセクション */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            よくある質問
+          </h2>
+          <div className="space-y-4">
+            <details className="bg-white/90 backdrop-blur-xl rounded-2xl p-6 cursor-pointer">
+              <summary className="font-bold text-gray-900">
+                βテスト期間はいつまでですか？
+              </summary>
+              <p className="text-gray-600 mt-3">
+                2025年1月〜3月を予定しています。期間中にフィードバックをいただき、正式リリース時により良いサービスを提供します。
+              </p>
+            </details>
+
+            <details className="bg-white/90 backdrop-blur-xl rounded-2xl p-6 cursor-pointer">
+              <summary className="font-bold text-gray-900">
+                どのくらいの頻度で使う必要がありますか？
+              </summary>
+              <p className="text-gray-600 mt-3">
+                週1回以上の利用を推奨していますが、ご自身のペースで構いません。気軽に感情を記録していただけると嬉しいです。
+              </p>
+            </details>
+
+            <details className="bg-white/90 backdrop-blur-xl rounded-2xl p-6 cursor-pointer">
+              <summary className="font-bold text-gray-900">
+                技術的な知識は必要ですか？
+              </summary>
+              <p className="text-gray-600 mt-3">
+                いいえ、必要ありません。一般的なWebサービスを使える方であれば問題なくご利用いただけます。
+              </p>
+            </details>
+
+            <details className="bg-white/90 backdrop-blur-xl rounded-2xl p-6 cursor-pointer">
+              <summary className="font-bold text-gray-900">
+                データのプライバシーは守られますか？
+              </summary>
+              <p className="text-gray-600 mt-3">
+                はい。投稿データは暗号化して保存し、第三者に提供することはありません。X連携も必要最小限の権限のみを使用します。
+              </p>
+            </details>
+          </div>
+        </div>
+      </main>
+
+      {/* フッター */}
+      <footer className="border-t border-white/50 bg-white/80 backdrop-blur-xl mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
+          <p className="text-sm">
+            © 2025 Emotype. All rights reserved.
+          </p>
+          <p className="text-xs mt-2">
+            お問い合わせ: beta@emotype.app
+          </p>
+        </div>
+      </footer>
+    </div>
+  )
+}

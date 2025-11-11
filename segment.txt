@@ -1,0 +1,17 @@
+const highlights = useMemo<Highlight[]>(
+
+    () => [
+
+      { icon: '✨', label: tLanding('hero.feature1'), subLabel: tNavigation('search') },
+
+      { icon: '🤖', label: tLanding('hero.feature2'), subLabel: 'AI' }
+
+    ],
+
+    [tLanding, tNavigation]
+
+  )
+
+
+
+  

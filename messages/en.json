@@ -1,0 +1,907 @@
+{
+  "common": {
+    "appName": "Emotype",
+    "tagline": "Your Social-Mood Coach",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "or": "or",
+    "language": "Language",
+    "languages": {
+      "ja": "Japanese",
+      "en": "English"
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "review": "Review",
+    "input": "Input",
+    "card": "Card",
+    "todo": "To-Do",
+    "templates": "Templates",
+    "analytics": "Analytics",
+    "search": "Search",
+    "calendar": "Calendar",
+    "xIntegration": "X Integration",
+    "subscription": "Plans",
+    "logout": "Logout",
+    "menu": "Menu",
+    "searchYourEmotions": "Search your emotions"
+  },
+  "landing": {
+    "hero": {
+      "badge": "Social Media ÁEMental Wellness",
+      "title": "Fix your",
+      "titleHighlight": "social-mood loop",
+      "description": "Analyze how X (Twitter) affects your mood with AI.",
+      "descriptionLine2": "Visualize doomscrolling and negative posts. Improve your emotional hygiene.",
+      "cta": "Try 7 days free",
+      "features": "View Features",
+      "feature1": "From $4.99/month",
+      "feature2": "Weekly mood reports"
+    },
+    "mockup": {
+      "searchTitle": "Search Emotions",
+      "searchSubtitle": "Reconnect with your past self",
+      "searchPlaceholder": "e.g. when I was happy, nervous moments...",
+      "similarityLabel": "Similarity",
+      "aiAnalysisTitle": "AI Analysis",
+      "aiAnalysisText": "Positive emotions increased by",
+      "aiAnalysisIncrease": "+23% this week",
+      "emotionGraphTitle": "Emotion Graph",
+      "live": "LIVE",
+      "examples": {
+        "joy": "Presentation success! I was nervous, but everyone smiled and it made me truly happy.",
+        "love": "Time with family means everything. Today was another day filled with happiness.",
+        "surprise": "I never expected it to turn out like this. The surprise made my heart race."
+      }
+    },
+    "features": {
+      "title": "What Emotype Can Do",
+      "subtitle": "Visualize the relationship between SNS usage and your mood. Weekly reports provide actionable insights.",
+      "subtitleLine2": "Free plan allows up to 100 posts per month. Unlock all features with Pro plan.",
+      "vectorSearch": {
+        "title": "Social Dependency Score",
+        "badge": "PRO",
+        "description": "Analyze X tweet frequency, negative ratio, and late-night posting. Doomscrolling meter scores your dependency level."
+      },
+      "emotionGraph": {
+        "title": "Emotion Trend Graph",
+        "badge": "Free available",
+        "description": "Visualize daily emotions in graphs. Check correlations between SNS usage time and mood. Free: 30 days, Pro: unlimited."
+      },
+      "xIntegration": {
+        "title": "Detox Suggestions",
+        "badge": "PRO",
+        "description": "AI suggests anxiety-inducing hours and mute candidates. Improve emotional hygiene with concrete action plans."
+      }
+    },
+    "cta": {
+      "title": "Build a Healthier Relationship with Social Media",
+      "description": "Try X integration and detox suggestions with 7-day free trial.",
+      "descriptionLine2": "Improve your emotional hygiene with weekly reports.",
+      "button": "Try 7 days free"
+    },
+    "footer": {
+      "copyright": "© {year} Emotype. All rights reserved.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "termsEn": "Terms (EN)",
+      "privacyEn": "Privacy (EN)"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email Address",
+    "emailPlaceholder": "your-email@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "loginButton": "Login",
+    "loggingIn": "Logging in...",
+    "googleLogin": "Sign in with Google",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "backToHome": "Back to home",
+    "errors": {
+      "title": "Error",
+      "invalidCredentials": "Invalid email or password",
+      "emailNotConfirmed": "Email address not confirmed",
+      "loginFailed": "Login failed",
+      "googleLoginFailed": "Google login failed"
+    }
+  },
+  "signup": {
+    "title": "Create account",
+    "subtitle": "Start tracking your emotions in minutes",
+    "email": "Email Address",
+    "emailPlaceholder": "your-email@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Re-enter your password",
+    "signupButton": "Create account",
+    "signingUp": "Creating account...",
+    "googleSignup": "Continue with Google",
+    "haveAccount": "Already have an account?",
+    "login": "Log in",
+    "confirmationEmailTitle": "Check your inbox",
+    "confirmationEmailDescription": "We sent you a confirmation email. Please verify it to start using Emotype.",
+    "errors": {
+      "title": "Error",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "alreadyRegistered": "This email is already registered",
+      "signupFailed": "Sign-up failed",
+      "googleSignupFailed": "Google sign-up failed"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "stats": {
+      "title": "Statistics",
+      "total": "Total Posts",
+      "thisWeek": "This Week",
+      "thisMonth": "This Month"
+    },
+    "postForm": {
+      "title": "Share Your Feelings",
+      "subtitle": "Record your emotions and connect with your past self",
+      "placeholder": "How do you feel right now?",
+      "characterCount": "{count}/500",
+      "imageButton": "Image",
+      "audioButton": "Audio",
+      "submitButton": "Post",
+      "posting": "Posting...",
+      "imageAttached": "📷 {fileName}",
+      "audioAttached": "Audio memo attached",
+      "successMessage": "Post completed! ✨",
+      "errorMessage": "Error: {message}",
+      "emptyContent": "Please enter content"
+    },
+    "recentPosts": {
+      "title": "Recent Posts",
+      "subtitle": "Your emotional records",
+      "viewAll": "View all",
+      "noPostsTitle": "No posts yet",
+      "noPostsDescription": "Try sharing your emotions using the form above"
+    },
+    "aiInsight": {
+      "title": "AI Insights",
+      "subtitle": "Emotion trend analysis",
+      "byClaudeAI": "by Claude AI",
+      "noInsight": "Failed to load insights"
+    },
+    "emotionGraph": {
+      "title": "Emotion Graph",
+      "subtitle": "Visualize emotional changes",
+      "days": "{count} days of emotional changes",
+      "noData": "No data available",
+      "noDataDescription": "Graph will appear once you add posts",
+      "emotionScore": "Emotion Score",
+      "neutralLine": "Neutral Line (50%)",
+      "periods": {
+        "7days": "7 days",
+        "14days": "14 days",
+        "30days": "30 days"
+      },
+      "tooltip": {
+        "emotionScore": "Emotion Score:",
+        "postCount": "Posts: {count}",
+        "veryPositive": "Very Positive",
+        "positive": "Positive",
+        "somewhatNegative": "Somewhat Negative",
+        "negative": "Negative"
+      }
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "searchEmotions": "Search Emotions",
+      "searchEmotionsDescription": "Find posts with similar feelings",
+      "xIntegration": "X Integration",
+      "xIntegrationDescription": "Import posts from Twitter"
+    },
+    "quickLog": {
+      "title": "Instant Emotion Log",
+      "subtitle": "Tap an emotion to save it as a quick post",
+      "defaultContent": "Feeling {label} right now",
+      "success": "{emoji} Logged {label}",
+      "error": "Could not record your emotion: {message}"
+    },
+    "planBanner": {
+      "free": {
+        "title": "Free Plan (FREE)",
+        "posts": "This month's posts: {count} / 30",
+        "remaining": "({count} remaining)",
+        "upgradeButton": "Go Pro"
+      },
+      "pro": {
+        "title": "Pro Plan",
+        "badge": "UNLIMITED",
+        "description": "All Pro features available",
+        "postsLabel": "This month's posts"
+      },
+      "admin": {
+        "title": "Admin Account",
+        "badge": "ADMIN",
+        "description": "All features and user management available",
+        "postsLabel": "This month's posts"
+      }
+    },
+    "upgradePrompt": {
+      "title": "Upgrade to Pro Plan",
+      "subtitle": "Unlock all features and maximize your emotion tracking",
+      "startButton": "Start Pro Plan",
+      "paymentNotice": "※ Payment processing coming soon. Please wait a moment.",
+      "planComparison": {
+        "free": {
+          "title": "Free",
+          "price": "¥0",
+          "period": "Forever free",
+          "features": {
+            "basicPosts": "Post & search emotions",
+            "monthlyLimit": "Up to 30 posts/month",
+            "noGraph": "Emotion trend graph",
+            "noInsights": "AI insights (daily/weekly)",
+            "noXIntegration": "X integration (coming soon)",
+            "noMedia": "Image & audio attachments",
+            "noEmotionCode": "Emotion code feature"
+          }
+        },
+        "pro": {
+          "title": "Pro",
+          "price": "¥480",
+          "period": "Monthly (16% OFF)",
+          "popular": "Popular",
+          "features": {
+            "unlimitedPosts": "Unlimited posts",
+            "emotionGraph": "Emotion trend graph",
+            "aiInsights": "AI insights (daily/weekly)",
+            "xIntegration": "X integration (coming soon)",
+            "media": "Image & audio attachments",
+            "emotionCode": "Emotion code feature",
+            "prioritySupport": "Priority support"
+          }
+        }
+      }
+    },
+    "audioRecorder": {
+      "title": "Audio Memo",
+      "micDenied": "Microphone access was denied. Please check your browser settings.",
+      "indicator": "Recording...",
+      "startButton": "Start recording",
+      "stopButton": "Stop",
+      "recordingTime": "Recording time",
+      "recordingComplete": "Recording complete",
+      "retryButton": "Record again",
+      "confirmButton": "Use this recording"
+    },
+    "proFeatureGuard": {
+      "loading": "Loading...",
+      "title": "Pro Feature",
+      "description": "This feature is available on the Pro plan. Upgrade to unlock every tool.",
+      "cta": "View Pro plan",
+      "back": "Back to dashboard"
+    },
+    "twitterIntegration": {
+      "title": "X (Twitter) Integration",
+      "description": "Connect your X account to sync followers and posts automatically.",
+      "statusBadge": {
+        "connected": "Connected",
+        "disconnected": "Not connected"
+      },
+      "benefitsTitle": "Benefits of connecting",
+      "benefits": {
+        "followers": "Automatically log follower trends",
+        "performance": "Analyze post performance",
+        "engagement": "Visualize engagement rate"
+      },
+      "actions": {
+        "connect": "Connect X account",
+        "connecting": "Connecting...",
+        "manualSync": "Manual sync",
+        "syncing": "Syncing...",
+        "disconnect": "Disconnect",
+        "connectAnother": "Connect a different account"
+      },
+      "notes": {
+        "title": "Important",
+        "autoSync": "Data sync runs every hour.",
+        "rateLimit": "Due to X API limits, some data may be missing.",
+        "disconnect": "Disconnecting removes previously synced data."
+      },
+      "connectedCard": {
+        "title": "Connected account",
+        "username": "Username",
+        "followers": "Followers",
+        "posts": "Posts",
+        "lastSync": "Last sync"
+      },
+      "unconnected": {
+        "title": "X (Twitter) Integration",
+        "subtitle": "Connect your X account to automatically sync followers and posts."
+      },
+      "errors": {
+        "status": "Failed to fetch connection status (status {status}).",
+        "authUrl": "Failed to obtain the authentication URL.",
+        "disconnect": "Failed to disconnect. Please try again.",
+        "sync": "Failed to sync data.",
+        "rateLimit": "You hit the X API rate limit. Please wait a moment and try again.",
+        "rateLimitMinutes": "You hit the X API rate limit. Try again in about {minutes} minutes.",
+        "rateLimitTime": "You hit the X API rate limit. Try again around {time}.",
+        "nextRetryTime": "Next available sync window: {time}",
+        "nextRetryMinutes": "Next available sync window in about {minutes} minutes.",
+        "generic": "A temporary error occurred. Please try again."
+      },
+      "dialogs": {
+        "disconnectConfirm": "Disconnect X integration?"
+      }
+    },
+    "twitterPosts": {
+      "title": "X (Twitter) posts ({count})",
+      "emptyTitle": "No posts yet",
+      "emptyDescription": "Use “Sync data” to import posts from X.",
+      "errors": {
+        "loginRequired": "You need to sign in.",
+        "loadFailed": "Failed to load tweets."
+      },
+      "media": {
+        "photo": "Media {index}",
+        "video": "Video thumbnail {index}",
+        "quotedPhoto": "Quoted tweet media {index}",
+        "quotedVideo": "Quoted tweet video thumbnail {index}"
+      },
+      "openOnX": "Open on X (Twitter) →"
+    }
+  },
+  "beta": {
+    "badge": "Private beta in progress",
+    "header": {
+      "back": "Back to home"
+    },
+    "hero": {
+      "title": "Shape a calmer social media routine with",
+      "highlight": "the Emotype beta",
+      "subtitle": "Get full access to the emotion dashboard, AI insights, and X integration before launch.",
+      "highlights": [
+        "Unlimited dashboard + emotion graph",
+        "Weekly AI digest based on your posts",
+        "Invite-only Discord feedback channel"
+      ]
+    },
+    "benefits": {
+      "title": "Why join now?",
+      "subtitle": "Beta testers help us fine-tune Emotype and receive exclusive perks.",
+      "earlyAccess": {
+        "title": "Pro features unlocked",
+        "description": "Use the complete dashboard, AI insights, and upcoming X automation during the beta period."
+      },
+      "community": {
+        "title": "Direct line to the team",
+        "description": "Access an invite-only Discord space to share feedback and vote on roadmap ideas."
+      },
+      "feedback": {
+        "title": "Influence the roadmap",
+        "description": "Your weekly reports help us improve emotion detection, prompts, and visualizations."
+      },
+      "perks": {
+        "title": "Launch-day rewards",
+        "description": "Enjoy discounted Pro pricing and early access invites for your friends once we launch."
+      }
+    },
+    "form": {
+      "title": "Apply for beta access",
+      "subtitle": "Tell us how you'll use Emotype. We review new submissions each week.",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "twitter": "X (Twitter) handle",
+      "twitterPlaceholder": "emotype_app",
+      "twitterHint": "Optional but helps us follow up faster.",
+      "motivation": "How would you like to use Emotype?",
+      "motivationPlaceholder": "e.g. Track weekly mood swings from X, encourage healthier posting habits, etc.",
+      "submit": "Apply for beta",
+      "submitting": "Submitting...",
+      "disclaimer": "We only use your email for beta-related communication.",
+      "submitError": "Submission failed. Please try again."
+    },
+    "success": {
+      "title": "Application received",
+      "description": "Thank you! We review applications within a few days. Keep an eye on your inbox.",
+      "button": "Back to home"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": {
+        "timeline": {
+          "question": "When does the beta start?",
+          "answer": "We run rolling cohorts throughout 2025. New testers are invited every week as we expand capacity."
+        },
+        "selection": {
+          "question": "How are testers selected?",
+          "answer": "We prioritize people who actively log emotions or post on X, and those who can share structured feedback."
+        },
+        "cost": {
+          "question": "Does the beta cost anything?",
+          "answer": "No. All Pro features are free while the beta runs. We will notify you before we launch paid plans."
+        },
+        "platform": {
+          "question": "What do I need to use Emotype?",
+          "answer": "The beta is web-based. A desktop or mobile browser and an email address are all you need."
+        }
+      }
+    },
+    "footer": {
+      "copyright": "© {year} Emotype. All rights reserved.",
+      "contact": "Contact: beta@emotype.app"
+    }
+  },
+  "dashboardInput": {
+    "badge": "Manual logging",
+    "title": "Mood & Activity Console",
+    "subtitle": "Track feelings, screen time, and notes without connecting SNS accounts.",
+    "weekProgress": "{count}/7 days logged this week",
+    "dailySnapshot": {
+      "label": "Daily snapshot",
+      "prev": "Prev day",
+      "next": "Next day"
+    },
+    "fields": {
+      "date": "Date",
+      "moodScore": "Mood score",
+      "snsMinutes": "SNS minutes",
+      "postCount": "Posts",
+      "memo": "Reflection memo",
+      "tags": "Memo tags",
+      "sleepScore": "Sleep (0-10)",
+      "mealsScore": "Meals (0-10)",
+      "focusScore": "Focus (0-10)"
+    },
+    "placeholders": {
+      "memo": "Ex: Felt tired after late work or doomscrolling...",
+      "tagInput": "Type #tag and press Enter"
+    },
+    "toggles": {
+      "optional": "Add optional metrics"
+    },
+    "actions": {
+      "save": "Save record",
+      "saving": "Saving...",
+      "import": "Import rows",
+      "importing": "Importing..."
+    },
+    "templates": {
+      "label": "Templates",
+      "title": "Offline templates",
+      "description": "Stay consistent with a printable PDF or Notion database.",
+      "pdf": "Download PDF log",
+      "notion": "Duplicate Notion DB"
+    },
+    "import": {
+      "label": "CSV import",
+      "title": "Bulk import",
+      "description": "Drop exported CSV files to backfill a week in seconds.",
+      "rowsDetected": "{count} rows detected"
+    },
+    "tables": {
+      "status": "Status",
+      "invalid": "Needs fix",
+      "ready": "Ready"
+    },
+    "history": {
+      "label": "Records",
+      "title": "This week",
+      "hint": "We reuse these entries when generating the AI review.",
+      "empty": "No records logged for this week yet."
+    },
+    "messages": {
+      "loadError": "Failed to load records.",
+      "moodRequired": "Enter a mood score between 1 and 10.",
+      "saveError": "Could not save the record.",
+      "saveSuccess": "Logged your day successfully.",
+      "csvParseError": "Could not parse the CSV file.",
+      "noValidRows": "No valid rows to import.",
+      "importError": "Failed to import records.",
+      "importSuccess": "Imported {count} rows."
+    }
+  },
+  "weeklyReview": {
+    "badge": "Weekly reflection",
+    "title": "AI Review of Your Week",
+    "subtitle": "Log manually, let Emotype surface the story and next actions.",
+    "summaryCard": {
+      "title": "Weekly summary",
+      "avgMood": "Avg. mood",
+      "screenTime": "Total screen time",
+      "loggedDays": "Logged days",
+      "range": "Range",
+      "planFree": "Free plan",
+      "planPro": "Pro plan",
+      "logsHint": "Log at least 4 days to unlock deeper insights."
+    },
+    "highlights": {
+      "title": "Highlights",
+      "placeholder": "Keep logging to discover positive patterns."
+    },
+    "warnings": {
+      "title": "Warning signs",
+      "placeholder": "No red flags this week. Stay consistent!"
+    },
+    "actions": {
+      "title": "Actionable next steps",
+      "placeholder": "AI will suggest concrete habits after a few more logs."
+    },
+    "heatmap": {
+      "title": "Doomscroll heatmap",
+      "description": "We estimate time-of-day risk based on your notes and tags.",
+      "empty": "Add short notes to highlight when doomscrolling tends to happen."
+    },
+    "correlation": {
+      "title": "Mood vs. screen time",
+      "description": "See how your average mood moves against SNS minutes.",
+      "empty": "Log at least two days to show the chart."
+    },
+    "notes": {
+      "title": "Notable moments",
+      "empty": "Add daily notes to capture context for your week."
+    },
+    "buttons": {
+      "download": "Save weekly card",
+      "downloading": "Preparing card...",
+      "copy": "Copy summary",
+      "copied": "Copied!",
+      "downloaded": "Card downloaded.",
+      "downloadError": "Could not prepare the card."
+    },
+    "messages": {
+      "error": "Could not load your weekly review.",
+      "empty": "Record at least one day to generate the review."
+    }
+  },
+  "weeklyCard": {
+    "badge": "Share-ready visual",
+    "title": "Weekly Card",
+    "subtitle": "Turn your AI review into an image for Slack, Threads, or personal archives.",
+    "preview": {
+      "title": "Live preview",
+      "empty": "Generate at least one weekly review to see this preview."
+    },
+    "meta": {
+      "score": "Weekly score",
+      "mood": "Avg mood",
+      "sns": "Total SNS time",
+      "doom": "Doomscroll index"
+    },
+    "actions": {
+      "download": "Save card",
+      "downloading": "Preparing image...",
+      "copied": "Summary copied",
+      "copy": "Copy summary text",
+      "shareHint": "Share manually on X, Threads, Slack, or anywhere you like."
+    },
+    "tips": {
+      "title": "Sharing tips",
+      "list": {
+        "item1": "Add a short caption about one habit you changed.",
+        "item2": "Tag #emotype to help other people discover the workflow.",
+        "item3": "Use the card as a Monday stand-up update."
+      }
+    },
+    "messages": {
+      "error": "Failed to load the weekly card.",
+      "downloaded": "Image saved to your device.",
+      "copyError": "Clipboard is not available."
+    }
+  },
+  "todo": {
+    "badge": "Action lab",
+    "title": "Weekly To-Do",
+    "subtitle": "Convert AI suggestions and your own ideas into trackable habits.",
+    "sections": {
+      "ai": "Suggested actions",
+      "custom": "Your To-Dos",
+      "progress": "Progress",
+      "emptyAi": "Generate a weekly review to receive new suggestions.",
+      "emptyCustom": "Add your own To-Dos to stay accountable."
+    },
+    "form": {
+      "placeholder": "e.g. Silence notifications after 10 PM",
+      "addButton": "Add To-Do",
+      "typeLabel": "Type",
+      "types": {
+        "do": "Do",
+        "avoid": "Avoid",
+        "custom": "Custom"
+      }
+    },
+    "list": {
+      "markDone": "Mark as done",
+      "undo": "Undo",
+      "sourceAi": "AI suggestion",
+      "sourceUser": "Added by you"
+    },
+    "badges": {
+      "streak3": "3-day streak unlocked!"
+    },
+    "messages": {
+      "loading": "Loading To-Dos...",
+      "error": "Failed to load To-Dos.",
+      "addError": "Could not add this To-Do.",
+      "updateError": "Could not update the To-Do.",
+      "aiAdded": "Added to your list."
+    }
+  },
+  "templatesPage": {
+    "badge": "Offline toolkit",
+    "title": "Templates & Import",
+    "subtitle": "Prefer spreadsheets or Notion? Grab the templates and batch-import your week.",
+    "downloads": {
+      "title": "Download templates",
+      "pdf": "Download PDF log sheet",
+      "notion": "Duplicate Notion database",
+      "csv": "CSV format"
+    },
+    "upload": {
+      "title": "Import CSV",
+      "description": "Match columns date,mood,sns_time,posts,sleep,meals,focus,memo.",
+      "button": "Import records",
+      "importing": "Importing...",
+      "previewTitle": "Rows detected",
+      "valid": "Ready",
+      "invalid": "Fix required"
+    },
+    "sample": {
+      "title": "Sample week",
+      "description": "Use this as a reference for data entry."
+    },
+    "help": {
+      "title": "Format help",
+      "items": {
+        "item1": "Dates use YYYY-MM-DD.",
+        "item2": "Mood is 1-10, SNS minutes can be 0.",
+        "item3": "Memo text up to 500 characters."
+      }
+    },
+    "messages": {
+      "error": "Failed to import records.",
+      "success": "Imported {count} records.",
+      "parseError": "Unable to read the CSV."
+    }
+  },
+  "adminAnalytics": {
+    "badge": "Ops dashboard",
+    "title": "Analytics",
+    "subtitle": "Monitor activation, review usage, and habit formation.",
+    "cards": {
+      "dau": "DAU",
+      "wau": "WAU",
+      "mau": "MAU",
+      "review": "Review rate",
+      "todo": "To-Do completion",
+      "conversion": "Free → Pro"
+    },
+    "charts": {
+      "active": "Daily active users (last 7 days)",
+      "events": "Event mix"
+    },
+    "table": {
+      "title": "Event breakdown",
+      "event": "Event",
+      "count": "Count"
+    },
+    "messages": {
+      "loading": "Loading analytics...",
+      "unauthorized": "Admin access only.",
+      "error": "Failed to load analytics."
+    }
+  },
+  "posts": {
+    "title": "All Posts",
+    "subtitle": "View all your posts",
+    "searchPlaceholder": "Search posts...",
+    "filterByEmotion": "Filter by emotion",
+    "resultCount": "{count} posts",
+    "filterApplied": " (filtered)",
+    "noPostsFound": "No posts found",
+    "changeFilter": "Try changing the filter",
+    "noPostsYet": "No posts yet",
+    "audioMemo": "Audio Memo",
+    "postImage": "Post Image"
+  },
+  "search": {
+    "title": "Search Emotions",
+    "subtitle": "Find past emotions using natural language",
+    "placeholder": "e.g. sad, happy, frustrated moments, nervous...",
+    "searchButton": "Search",
+    "searching": "Searching...",
+    "resultCount": "{count} results found",
+    "noResults": "No results found",
+    "tryDifferentKeyword": "Try a different keyword",
+    "startSearching": "Let's search for emotions",
+    "searchDescription": "Search using natural language like \"sad,\" \"happy,\" \"frustrated moments,\" or \"nervous times.\"",
+    "searchDescriptionLine2": "AI understands the meaning of emotions and finds posts with similar feelings.",
+    "similarity": "Similarity {percent}%",
+    "lowRelevance": "(May have low relevance)",
+    "errors": {
+      "title": "An error occurred",
+      "message": "{message}"
+    }
+  },
+  "subscription": {
+    "title": "Plan Management",
+    "subtitle": "Check your current plan and usage",
+    "currentPlan": "Current Plan",
+    "currentPlanBadge": "Current Plan",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "monthlyPosts": "Monthly posts",
+    "remainingPosts": "Remaining posts",
+    "availableFeatures": "Available features",
+    "allFeatures": "All",
+    "allProFeatures": "All Pro features available",
+    "allAdminFeatures": "All features and user management available",
+    "downgradeButton": "Switch to Free Plan",
+    "upgradeDescription": "Unlock unlimited posts and all features with Pro plan. Includes 7-day free trial.",
+    "startTrialButton": "Start 7-day free trial",
+    "planComparison": {
+      "title": "Plan Comparison",
+      "free": {
+        "title": "Free",
+        "price": "¥0",
+        "period": "Forever free",
+        "features": {
+          "basicPosts": "Basic emotion posts",
+          "monthlyLimit": "Up to 30 posts/month",
+          "basicSearch": "Basic emotion search",
+          "noGraph": "Emotion trend graph",
+          "noInsights": "AI insights",
+          "noMedia": "Image & audio attachments",
+          "noXIntegration": "X integration",
+          "noCalendar": "Calendar feature"
+        }
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "¥480",
+        "period": "Monthly (incl. tax)",
+        "recommended": "Recommended",
+        "trialNotice": "7-day free trial included. Cancel anytime.",
+        "features": {
+          "unlimitedPosts": "Unlimited posts",
+          "emotionGraph": "Emotion trend graph",
+          "aiInsights": "AI insights (daily/weekly)",
+          "media": "Image & audio attachments",
+          "xIntegration": "X integration",
+          "calendar": "Calendar feature",
+          "emotionCode": "Emotion code feature",
+          "prioritySupport": "Priority support"
+        }
+      }
+    },
+    "upgradeModal": {
+      "title": "Start 7-day free trial",
+      "subtitle": "Unlock all features and maximize your emotion tracking",
+      "billing": {
+        "monthly": {
+          "price": "¥{price}",
+          "period": "Monthly"
+        },
+        "yearly": {
+          "price": "¥{price}",
+          "period": "Yearly (¥400/month equiv.)",
+          "savings": "Save ¥960"
+        }
+      },
+      "priceDisplay": "¥{price} / {period}",
+      "perMonth": "month",
+      "perYear": "year",
+      "taxIncluded": "Incl. tax, {period} billing",
+      "monthlySavings": "Save ¥{amount} vs monthly!",
+      "features": {
+        "unlimitedPosts": "Unlimited posts",
+        "emotionGraph": "Emotion trend graph",
+        "aiInsights": "AI insights",
+        "allProFeatures": "All Pro features"
+      },
+      "startButton": "Start 7-day free trial",
+      "processing": "Processing...",
+      "paymentRedirect": "Redirecting to Stripe checkout..."
+    },
+    "downgradeModal": {
+      "title": "Switch to Free Plan",
+      "subtitle": "Are you sure you want to switch to the free plan?",
+      "limitations": "Limitations after switching:",
+      "limitationsList": {
+        "monthlyLimit": "Limited to 30 posts per month",
+        "noGraph": "Emotion trend graph unavailable",
+        "noInsights": "AI insights unavailable",
+        "noMedia": "Image & audio attachments unavailable",
+        "noXIntegration": "X integration unavailable",
+        "noCalendar": "Calendar feature unavailable"
+      },
+      "dataNotice": "Rest assured:",
+      "dataNoticeText": "All your past data will be retained. You can re-upgrade to Pro plan anytime.",
+      "cancelButton": "Cancel",
+      "confirmButton": "Switch to Free Plan",
+      "processing": "Processing..."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "payment": {
+        "question": "What payment methods are available?",
+        "answer": "We accept credit card payments through Stripe. Safe and secure payment processing."
+      },
+      "changePlan": {
+        "question": "Can I change my plan anytime?",
+        "answer": "Yes, you can upgrade or downgrade anytime. Upgrades take effect immediately. For downgrades, Pro plan continues until the end of current billing period, then switches to free plan."
+      },
+      "dataRetention": {
+        "question": "What happens to my data when upgrading from free to paid plan?",
+        "answer": "All your past data is retained and becomes accessible with Pro plan features."
+      },
+      "refund": {
+        "question": "Can I get a refund?",
+        "answer": "Monthly subscriptions are non-refundable, but you can cancel your plan anytime. Billing stops from the next renewal date after cancellation."
+      }
+    },
+    "messages": {
+      "checkingPayment": "Confirming payment completion...",
+      "paymentComplete": "Payment completed.",
+      "paymentCanceled": "Payment was canceled.",
+      "upgradeSuccess": "Successfully upgraded to Pro plan.",
+      "downgradeSuccess": "Successfully switched to free plan.",
+      "upgradeFailed": "Failed to start Stripe checkout",
+      "downgradeFailed": "Downgrade failed",
+      "createSessionFailed": "Failed to create Stripe checkout session"
+    }
+  },
+  "emotions": {
+    "labels": {
+      "joy": "Joy",
+      "happiness": "Happiness",
+      "sadness": "Sadness",
+      "anger": "Anger",
+      "fear": "Fear",
+      "love": "Love",
+      "surprise": "Surprise",
+      "disappointment": "Disappointment",
+      "excitement": "Excitement",
+      "neutral": "Neutral"
+    }
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{count}m ago",
+    "hoursAgo": "{count}h ago",
+    "daysAgo": "{count}d ago",
+    "dateFormat": "{month}/{day} {hours}:{minutes}",
+    "dayOfWeek": {
+      "sunday": "Sun",
+      "monday": "Mon",
+      "tuesday": "Tue",
+      "wednesday": "Wed",
+      "thursday": "Thu",
+      "friday": "Fri",
+      "saturday": "Sat"
+    }
+  },
+  "errors": {
+    "generic": "An error occurred",
+    "networkError": "Network error occurred",
+    "sessionNotFound": "Session was not created",
+    "unauthorized": "Authentication required",
+    "forbidden": "Access denied",
+    "notFound": "Page not found",
+    "serverError": "Server error occurred"
+  }
+}
