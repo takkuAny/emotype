@@ -34,7 +34,10 @@ export default function CommerceDisclosurePageEn() {
 
         <section className={sectionClass}>
           <h2 className="text-xl font-bold mb-4">Business Address</h2>
-          <p>2-18-33-702 Higashi-Narashino, Narashino-shi, Chiba 275-0001, Japan</p>
+          <p>Will be disclosed upon request without delay.</p>
+          <p className="text-sm text-gray-600 mt-2">
+            ※For privacy protection, we use the disclosure-upon-request method for our address
+          </p>
         </section>
 
         <section className={sectionClass}>

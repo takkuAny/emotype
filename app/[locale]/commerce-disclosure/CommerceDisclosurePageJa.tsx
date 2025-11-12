@@ -31,7 +31,10 @@ export default function CommerceDisclosurePageJa() {
 
         <section className={sectionClass}>
           <h2 className="text-xl font-bold mb-4">所在地</h2>
-          <p>〒275-0001 千葉県習志野市東習志野2-18-33-702</p>
+          <p>請求があった場合には遅滞なく開示いたします。</p>
+          <p className="text-sm text-gray-600 mt-2">
+            ※個人情報保護のため、住所は請求時に開示する方式を採用しています
+          </p>
         </section>
 
         <section className={sectionClass}>
