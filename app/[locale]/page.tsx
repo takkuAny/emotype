@@ -377,6 +377,10 @@ export default function Home() {
               <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                 {tLanding('footer.privacy')}
               </Link>
+              <span className="text-gray-300">/</span>
+              <Link href="/commerce-disclosure" className="hover:text-gray-900 transition-colors">
+                特定商取引法に基づく表記
+              </Link>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-400">
               <Link href="/terms" locale="en" className="hover:text-gray-700 transition-colors">

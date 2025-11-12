@@ -9,6 +9,7 @@ import type { User, AuthChangeEvent } from '@supabase/supabase-js'
 import Navigation from '@/components/Navigation'
 import EmotionGraph from '@/components/EmotionGraph'
 import AudioRecorder from '@/components/AudioRecorder'
+import Footer from '@/components/Footer'
 import { useSubscription } from '@/hooks/useSubscription'
 import { useRouter } from '@/i18n/routing'
 import { trackPageView, trackPostCreated, trackWeeklyReportShared } from '@/lib/analytics'
@@ -1201,6 +1202,8 @@ function DashboardPageContent() {
           onCancel={() => setShowAudioRecorder(false)}
         />
       )}
+
+      <Footer />
     </div>
   )
 }

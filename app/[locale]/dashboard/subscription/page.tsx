@@ -496,6 +496,24 @@ function SubscriptionPageContent() {
               <p className="text-gray-600">月額課金は返金対象外ですが、プランをいつでもキャンセルできます。キャンセル後は次回更新時から課金が停止されます。</p>
             </div>
           </div>
+
+          {/* 法的情報へのリンク */}
+          <div className="mt-8 pt-6 border-t border-gray-200 text-center">
+            <p className="text-sm text-gray-500 mb-3">法的情報</p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm">
+              <a href="/terms" className="text-emerald-600 hover:text-emerald-700 font-medium hover:underline">
+                利用規約
+              </a>
+              <span className="text-gray-300">|</span>
+              <a href="/privacy" className="text-emerald-600 hover:text-emerald-700 font-medium hover:underline">
+                プライバシーポリシー
+              </a>
+              <span className="text-gray-300">|</span>
+              <a href="/commerce-disclosure" className="text-emerald-600 hover:text-emerald-700 font-medium hover:underline">
+                特定商取引法に基づく表記
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -620,6 +638,13 @@ function SubscriptionPageContent() {
                   '7日間無料トライアルを始める'
                 )}
               </button>
+              <p className="text-xs text-gray-500 mt-4">
+                <a href="/terms" className="hover:text-emerald-600 underline">利用規約</a>
+                {' '}・{' '}
+                <a href="/privacy" className="hover:text-emerald-600 underline">プライバシーポリシー</a>
+                {' '}・{' '}
+                <a href="/commerce-disclosure" className="hover:text-emerald-600 underline">特定商取引法に基づく表記</a>
+              </p>
             </div>
           </div>
         </div>
